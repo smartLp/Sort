@@ -268,9 +268,9 @@ def selection_sort(collection):
             for j in range(i+1,length):
                 
                 if collection[i] > collection[j]:
-                    temp = collection[i]
-                    collection[i] = collection[j]
-                    collection[j] = temp
+                    
+                    collection[i],collection[j] = collection[j],collection[i]
+                    
     return collection
             
                 
